@@ -1,24 +1,174 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu bản thân</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-        h1 { color: #2c3e50; }
-        .avatar { width: 150px; border-radius: 50%; }
-        .links a { margin: 0 10px; text-decoration: none; color: #3498db; }
-    </style>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Me - Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="avatar" class="avatar">
-<h1>Xin chào, mình là Dương 👋</h1>
-<p>💻 Developer | 🌱 Học Nuxt 3 + Laravel | 🚀 Yêu thích công nghệ</p>
-<div class="links">
-    <a href="https://github.com/yourusername">GitHub</a>
-    <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
-    <a href="mailto:youremail@example.com">Email</a>
-</div>
+
+<header>
+    <div class="container nav" aria-label="Main Navigation">
+        <div class="brand" aria-label="Brand">
+            <span class="brand-colored" style="font-size:0.9rem;">Duong Ta Van</span>
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#tech">Technologies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container" id="about">
+    <section class="hero" aria-label="Intro">
+        <div class="reveal" style="padding-right: 8px;">
+            <h1 class="headline">Hello, I’m Duong Ta Van — Fullstack Web Developer</h1>
+            <p class="subtle">
+                Hi, I'm Duong Ta Van 😊, a full-stack web developer.
+                ✨ My passion for software lies in dreaming up ideas and turning them into reality with elegant
+                interfaces.
+                ⚡ I highly value the experience, architecture, and code quality of the products I build.
+                I’m also an open-source enthusiast and maintainer.
+                🌱 I am also a person who likes to explore and develop new things, and performance optimization is also
+                something I focus on.
+                If I can help you, please connect with me.
+            </p>
+
+            <div class="cta-row" aria-label="Contact actions">
+                <a class="btn" href="mailto:duongtv2712@gmail.com?subject=Hello%20There" title="Email me">Email Me</a>
+            </div>
+        </div>
+
+        <div class="reveal reveal-right" style="display:flex; align-items:center; justify-content:center;">
+            <div class="card" style="max-width:400px; width:100%; text-align:left;">
+                <div class="section" style="padding: 0 0 8px; border-bottom: 1px solid rgba(255,255,255,.08);">
+                    <h2 style="font-size:1.1rem; margin:0;">Profile</h2>
+                </div>
+                <div class="grid" style="grid-template-columns: 1fr;">
+                    <div>
+                        <span class="label" style="display:block;">Full Name</span>
+                        <div class="value" style="font-weight:600;">Duong Ta Van</div>
+                    </div>
+                    <div>
+                        <span class="label" style="display:block;">Address</span>
+                        <div class="value" style="font-weight:600;">Ha Dong - Ha Noi - Viet Nam</div>
+                    </div>
+                    <div>
+                        <span class="label" style="display:block; margin-top:10px;">Email</span>
+                        <div class="value" style="font-family:monospace;">duongtv2712@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section card reveal" id="education" aria-label="Education">
+        <h2 style="margin:0 0 8px;">Education</h2>
+        <div class="grid grid-2">
+            <div>
+                <span class="label">Degree</span>
+                <div class="value">Engineer of Science in Computer Science</div>
+            </div>
+            <div>
+                <span class="label">Institution</span>
+                <div class="value">HaNoi University Of Industry</div>
+            </div>
+        </div>
+        <div class="grid" style="margin-top:10px;">
+            <div>
+                <span class="label">Years</span>
+                <div class="value">2017 - 2021</div>
+            </div>
+            <div>
+                <span class="label">Highlights</span>
+                <div class="value">Software design, algorithms, databases, server, web development</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section card reveal" id="experience" aria-label="Experience">
+        <h2 style="margin:0 0 8px;">Work Experience</h2>
+        <div class="grid" style="gap:14px;">
+            <div class="chip" style="justify-content: space-between;">
+                <span>Project Manager</span><span>Riki Viet Nam, 2022 - Present</span>
+            </div>
+            <div class="chip" style="justify-content: space-between;">
+                <span>Full-stack Developer</span><span>Fabbi holding, 2020 - 2022</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="section card reveal" id="tech" aria-label="Technologies">
+        <h2 style="margin:0 0 8px;">Technologies I Use</h2>
+        <p class="subtle" style="margin-top:0 0 12px;">
+            Proficient in modern web technologies and tools. Comfortable with full-stack development, deployment, and
+            performance tuning.
+        </p>
+
+        <ul class="tags" aria-label="Technology Tag List" style="margin:0 0 6px 0;">
+            <li>JavaScript (JS)</li>
+            <li>TypeScript (TS)</li>
+            <li>Node.js</li>
+            <li>Vue.js</li>
+            <li>Nuxt.js</li>
+            <li>PHP</li>
+            <li>Laravel</li>
+            <li>Docker</li>
+            <li>MySQL</li>
+            <li>Server Administration</li>
+        </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="section card reveal" id="contact" aria-label="Contact">
+        <h2 style="margin:0 0 8px;">Contact</h2>
+        <p class="subtle" style="margin-top:0;">
+            For collaboration, freelancing, or opportunities, reach out via email.
+        </p>
+        <p><strong>Email:</strong> <a href="mailto:duongtv2712@gmail.com" style="color:#fff;">duongtv2712@gmail.com</a></p>
+    </section>
+
+</main>
+
+<footer aria-label="Footer">
+    © 2025 Duong Ta Van. All rights reserved.
+</footer>
+
+<script>
+    // Smooth hash link scrolling for modern browsers
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href').substring(1);
+            const target = document.getElementById(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({behavior: 'smooth', block: 'start'});
+            }
+        });
+    });
+
+    // Simple reveal on scroll using IntersectionObserver
+    const revealElems = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {threshold: 0.15});
+
+    revealElems.forEach(el => observer.observe(el));
+</script>
+
 </body>
 </html>
